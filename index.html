@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Aditya Pal</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#contact">Contact</a>
+                <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+            </div>
+            <div class="mobile-menu" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hello, I'm Aditya Pal</h1>
+                <div class="subtitle">Computer Science & Engineering</div>
+                <div class="tagline">Pre-final year CSE student passionate about Web Development, AI, and Problem Solving.</div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="./Assets/Resume.pdf" class="btn btn-outline">Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-img-container">
+                    <div class="profile-img">
+                        <img src="./Assets/profile.png" alt="Aditya Pal">
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Get to know me better</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Background</h3>
+                    <p>I'm a dedicated Computer Science and Engineering student at Dr. A. P. J. Abdul Kalam Technical University with a strong passion for technology and innovation. My journey in tech started with curiosity about how things work, and has evolved into a deep interest in creating solutions that make a difference.</p>
+                    
+                    <h3>Technical Interests</h3>
+                    <p>I'm particularly interested in Web Development, Artificial Intelligence, and Data Structures & Algorithms. I enjoy building responsive web applications and solving complex programming challenges.</p>
+                    
+                    <h3>Career Aspirations</h3>
+                    <p>My goal is to become a Full Stack Developer and contribute to innovative projects that have a positive impact on society. I'm always eager to learn new technologies and take on challenging projects.</p>
+                </div>
+                <div class="info-section">
+                    <div class="info-card">
+                        <h3>Quick Info</h3>
+                        <div class="info-items">
+                            <div class="info-item-modern">
+                                <div class="info-icon">📚</div>
+                                <div class="info-details">
+                                    <span class="info-label">University</span>
+                                    <span class="info-value">Dr. A. P. J. Abdul Kalam Technical University</span>
+                                </div>
+                            </div>
+                            <div class="info-item-modern">
+                                <div class="info-icon">🎓</div>
+                                <div class="info-details">
+                                    <span class="info-label">Degree</span>
+                                    <span class="info-value">B.Tech CSE</span>
+                                </div>
+                            </div>
+                            <div class="info-item-modern">
+                                <div class="info-icon">📅</div>
+                                <div class="info-details">
+                                    <span class="info-label">Year</span>
+                                    <span class="info-value">3rd Year</span>
+                                </div>
+                            </div>
+                            <div class="info-item-modern">
+                                <div class="info-icon">💡</div>
+                                <div class="info-details">
+                                    <span class="info-label">CGPA</span>
+                                    <span class="info-value">--/10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-card">
+                        <h3>💡 Soft Skills</h3>
+                        <div class="soft-skills-grid">
+                            <div class="soft-skill-item">
+                                <span class="soft-skill-icon">💬</span>
+                                <span class="soft-skill-name">Communication</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span class="soft-skill-icon">🧩</span>
+                                <span class="soft-skill-name">Problem Solving</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">Technologies I work with</p>
+            <div class="skills-grid-modern">
+                <div class="skill-card-modern">
+                    <div class="skill-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" style="width:40px; height:40px;">
+                    </div>
+                    <h3>Python</h3>
+                    <p>Programming & Scripting</p>
+                </div>
+                <div class="skill-card-modern">
+                    <div class="skill-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" style="width:40px; height:40px;">
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Web Development</p>
+                </div>
+                <div class="skill-card-modern">
+                    <div class="skill-icon">
+                        <img src="./Assets/c.png" alt="C" style="width:40px; height:40px;">
+                    </div>
+                    <h3>C</h3>
+                    <p>System Programming</p>
+                </div>
+                <div class="skill-card-modern">
+                    <div class="skill-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML5" style="width:40px; height:40px;">
+                    </div>
+                    <h3>HTML</h3>
+                    <p>Markup Language</p>
+                </div>
+                <div class="skill-card-modern">
+                    <div class="skill-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3" style="width:40px; height:40px;">
+                    </div>
+                    <h3>CSS</h3>
+                    <p>Styling & Design</p>
+                </div>
+                <div class="skill-card-modern">
+                    <div class="skill-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React.js" style="width:40px; height:40px;">
+                    </div>
+                    <h3>React.js</h3>
+                    <p>Frontend Framework</p>
+                </div>
+                <div class="skill-card-modern">
+                    <div class="skill-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Node.js" style="width:40px; height:40px;">
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>Backend Runtime</p>
+                </div>
+                <div class="skill-card-modern">
+                    <div class="skill-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="Git" style="width:40px; height:40px;">
+                    </div>
+                    <h3>Git</h3>
+                    <p>Version Control</p>
+                </div>
+                <div class="skill-card-modern">
+                    <div class="skill-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" style="width:40px; height:40px;">
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Code Repository</p>
+                </div>
+                <div class="skill-card-modern">
+                    <div class="skill-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/906/906324.png" alt="VS Code" style="width:40px; height:40px;">
+                    </div>
+                    <h3>VS Code</h3>
+                    <p>Code Editor</p>
+                </div>
+                <div class="skill-card-modern">
+                    <div class="skill-icon">
+                        <img src="./Assets/mongodb.png" alt="MongoDB" style="width:40px; height:40px;">
+                    </div>
+                    <h3>MongoDB</h3>
+                    <p>NoSQL Database</p>
+                </div>
+                <div class="skill-card-modern">
+                    <div class="skill-icon">
+                        <img src="./Assets/ai.png" alt="MongoDB" style="width:40px; height:40px;">
+                    </div>
+                    <h3>Generative AI</h3>
+                    <p>AI Model Training</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">Things I've built during my journey</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image"><img src="./Assets/todo.png" alt="Project 1"></div>
+                    <div class="project-content">
+                        <h3>To-Do List Application</h3>
+                        <p>Developed a Python-based To-Do List application using Tkinter, enhancing task management efficiency by implementing features such as add, edit, delete, and save with an intuitive graphical interface.</p>
+                        <div class="tech-stack">
+                            <span class="tech">Python</span>
+                            <span class="tech">Tkinter</span>
+                            <span class="tech">GUI Development</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aadipalsingh/CODSOFT/tree/master/To-Do%20App" target="_blank">GitHub →</a>
+                            <a href="#" target="_blank" class="demo-link">Live Demo →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"><img src="./Assets/temperature.png" alt="Project 2"></div>
+                    <div class="project-content">
+                        <h3>Temperature Converter Website</h3>
+                        <p>Created a responsive temperature converter website using HTML, CSS, and JavaScript, enabling real-time unit conversion between Celsius, Fahrenheit, and Kelvin with optimized performance across 95% of screen sizes.</p>
+                        <div class="tech-stack">
+                            <span class="tech">HTML</span>
+                            <span class="tech">CSS</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">Responsive Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aadipalsingh/temperatureconverter.git" target="_blank">GitHub →</a>
+                            <a href="#" target="_blank" class="demo-link">Live Demo →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"><img src="./Assets/port.png" alt="Project 3"></div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Designed and deployed a personal portfolio website with interactive animations, boosting online professional visibility. Integrated responsive layouts and contact forms to ensure cross-platform compatibility.</p>
+                        <div class="tech-stack">
+                            <span class="tech">HTML</span>
+                            <span class="tech">CSS</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">Animations</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/aadipalsingh/portfolio.io.git" target="_blank">GitHub →</a>
+                            <a href="#" target="_blank" class="demo-link">Live Demo →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">⌨️</div>
+                    <div class="project-content">
+                        <h3>KeyMetrics - Typing Test</h3>
+                        <p>Built an interactive typing test web application that measures typing speed (WPM), accuracy, and provides real-time feedback. Features include multiple difficulty levels, performance analytics, and detailed statistics tracking.</p>
+                        <div class="tech-stack">
+                            <span class="tech">HTML5</span>
+                            <span class="tech">CSS3</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">Web APIs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank">GitHub →</a>
+                            <a href="#" target="_blank" class="demo-link">Live Demo →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title"> Experience</h2>
+            <p class="section-subtitle">My professional journey</p>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">December 2024 - January 2025</div>
+                    <h3 class="timeline-title">Python Developer Intern</h3>
+                    <div class="timeline-company">CodSoft</div>
+                    <p class="timeline-description">
+                        • Developed a Python-based To-Do List application using Tkinter, enhancing task management efficiency<br>
+                        • Implemented features such as add, edit, delete, and save functionalities<br>
+                        • Created an intuitive graphical interface that improved usability for non-technical users<br>
+                        • Reduced learning curve through user-friendly design and clear functionality
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">December 2024 - January 2025</div>
+                    <h3 class="timeline-title">Web Developer Intern</h3>
+                    <div class="timeline-company">Oasis Infobyte</div>
+                    <p class="timeline-description">
+                        • Created a responsive temperature converter website with real-time unit conversion<br>
+                        • Developed using HTML, CSS, and JavaScript for seamless user interaction<br>
+                        • Optimized website performance ensuring smooth interaction across 95% of screen sizes<br>
+                        • Designed and deployed personal portfolio website with interactive animations<br>
+                        • Integrated responsive layouts and contact forms for cross-platform compatibility
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Certifications</h2>
+            <p class="section-subtitle">Recognition and learning milestones</p>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">📜</div>
+                    <h3>Python Development</h3>
+                    <p>Python Developer<br>CodSoft<br>Completed: Jan 2025</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>Web Developer<br>Oasis Infobyte<br>Completed: Jan 2025</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">💻</div>
+                    <h3>Projects Completed</h3>
+                    <p>4 Major Projects<br>Task Management & Web Dev<br>Dec 2024 - Jan 2025</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🍳</div>
+                    <h3>Skills Acquired</h3>
+                    <p>Python • Tkinter<br>Responsive Design<br>Cross-platform Development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's connect and create something amazing</p>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" style="width:24px; height:24px;">
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <a href="mailto:aadipalsingh@gmail.com">aadipalsingh@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width:24px; height:24px;">
+                        </div>
+                        <div class="contact-text">
+                            <h3>LinkedIn</h3>
+                            <a href="https://linkedin.com/in/aditya-pal2005" target="_blank">linkedin.com/in/aditya-pal2005</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" style="width:24px; height:24px;">
+                        </div>
+                        <div class="contact-text">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/aadipalsingh" target="_blank">github.com/aadipalsingh</a>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="mailto:aadipalsingh@gmail.com" class="social-link" title="Email">
+                            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" style="width:20px; height:20px;">
+                        </a>
+                        <a href="https://linkedin.com/in/aditya-pal2005" class="social-link" target="_blank" title="LinkedIn">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width:20px; height:20px;">
+                        </a>
+                        <a href="https://github.com/aadipalsingh" class="social-link" target="_blank" title="GitHub">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" style="width:20px; height:20px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Aditya Pal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
