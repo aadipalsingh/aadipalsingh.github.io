@@ -7,6 +7,8 @@
 :root {
     --primary-color: #6366f1;
     --secondary-color: #8b5cf6;
+    --project-img-height: 200px;
+    --project-img-radius: 12px;
     --text-dark: #1f2937;
     --text-light: #6b7280;
     --bg-light: #ffffff;
@@ -536,13 +538,25 @@ section:nth-child(even) {
 }
 
 .project-image {
-    height: 200px;
+    height: var(--project-img-height);
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
     color: white;
+    overflow: hidden;
+    /* ensure the image area follows the project's corner radius */
+    border-radius: var(--project-img-radius);
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* inherit the container radius so corners always match */
+    border-radius: inherit;
 }
 
 .project-content {
