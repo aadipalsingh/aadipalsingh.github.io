@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,6 +20,7 @@
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#experience">Experience</a>
+                <a href="#certifications">Certifications</a>
                 <a href="#achievements">Achievements</a>
                 <a href="#contact">Contact</a>
                 <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
@@ -33,11 +37,17 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Hello, I'm Aditya Pal</h1>
-                <div class="subtitle">Computer Science & Engineering</div>
-                <div class="tagline">Pre-final year CSE student passionate about Web Development, AI, and Problem Solving.</div>
+                <span class="hero-kicker">Open to Software Development Internships</span>
+                <h1>Aditya Pal</h1>
+                <div class="subtitle">Python & Web Developer</div>
+                <div class="tagline">B.Tech CSE student at AKTU, Ghaziabad building responsive web apps, Python GUI tools, and strengthening Java and DSA fundamentals for production-ready engineering roles.</div>
+                <div class="hero-highlights">
+                    <span>DSA Focus</span>
+                    <span>Frontend + Python Projects</span>
+                    <span>Fast Learner</span>
+                </div>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#projects" class="btn btn-primary">View Selected Projects</a>
                     <a href="./Assets/Resume.pdf" class="btn btn-outline">Download Resume</a>
                 </div>
             </div>
@@ -48,6 +58,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- About Section -->
@@ -71,31 +82,38 @@
                         <h3>Quick Info</h3>
                         <div class="info-items">
                             <div class="info-item-modern">
-                                <div class="info-icon">📚</div>
-                                <div class="info-details">
-                                    <span class="info-label">University</span>
-                                    <span class="info-value">Dr. A. P. J. Abdul Kalam Technical University</span>
-                                </div>
-                            </div>
-                            <div class="info-item-modern">
                                 <div class="info-icon">🎓</div>
                                 <div class="info-details">
-                                    <span class="info-label">Degree</span>
-                                    <span class="info-value">B.Tech CSE</span>
+                                    <span class="info-label">UNIVERSITY</span>
+                                    <span class="info-value">Dr. A.P.J. Abdul Kalam Technical University</span>
                                 </div>
                             </div>
                             <div class="info-item-modern">
-                                <div class="info-icon">📅</div>
+                                <div class="info-icon">📖</div>
                                 <div class="info-details">
-                                    <span class="info-label">Year</span>
-                                    <span class="info-value">3rd Year</span>
+                                    <span class="info-label">DEGREE & YEAR</span>
+                                    <span class="info-value">B.Tech CSE - 3rd Year (2023-2027)</span>
                                 </div>
                             </div>
                             <div class="info-item-modern">
-                                <div class="info-icon">💡</div>
+                                <div class="info-icon">📍</div>
                                 <div class="info-details">
-                                    <span class="info-label">CGPA</span>
-                                    <span class="info-value">--/10</span>
+                                    <span class="info-label">LOCATION</span>
+                                    <span class="info-value">Ghaziabad, Uttar Pradesh - 201204</span>
+                                </div>
+                            </div>
+                            <div class="info-item-modern">
+                                <div class="info-icon">🐍</div>
+                                <div class="info-details">
+                                    <span class="info-label">CERTIFICATION</span>
+                                    <span class="info-value">NPTEL Python - IIT via SWAYAM</span>
+                                </div>
+                            </div>
+                            <div class="info-item-modern">
+                                <div class="info-icon">⭐</div>
+                                <div class="info-details">
+                                    <span class="info-label">Star Performer Award</span>
+                                    <span class="info-value">AICTE-backed Oasis Infobyte Internship, Jan 2025</span>
                                 </div>
                             </div>
                         </div>
@@ -112,6 +130,15 @@
                                 <span class="soft-skill-icon">🧩</span>
                                 <span class="soft-skill-name">Problem Solving</span>
                             </div>
+                            <div class="soft-skill-item">
+                                <span class="soft-skill-icon">🤝</span>
+                                <span class="soft-skill-name">Collaboration</span>
+                            </div>
+                            <div class="soft-skill-item">
+                                <span class="soft-skill-icon">⚡</span>
+                                <span class="soft-skill-name">Ownership</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -219,21 +246,23 @@
             <p class="section-subtitle">Things I've built during my journey</p>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image"><img src="./Assets/todo.png" alt="Project 1"></div>
+                    <div class="project-image"><img src="./Assets/keymetrics.png" alt="Project 1"></div>
                     <div class="project-content">
-                        <h3>To-Do List Application</h3>
-                        <p>Developed a Python-based To-Do List application using Tkinter, enhancing task management efficiency by implementing features such as add, edit, delete, and save with an intuitive graphical interface.</p>
+                        <h3>KeyMetrics - Typing Test</h3>
+                        <p>Built an interactive typing test web application that measures typing speed (WPM), accuracy, and provides real-time feedback. Features include multiple difficulty levels, performance analytics, and detailed statistics tracking.</p>
                         <div class="tech-stack">
-                            <span class="tech">Python</span>
-                            <span class="tech">Tkinter</span>
-                            <span class="tech">GUI Development</span>
+                            <span class="tech">HTML5</span>
+                            <span class="tech">CSS3</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">Web APIs</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/aadipalsingh/CODSOFT/tree/master/To-Do%20App" target="_blank">GitHub →</a>
-                            <a href="#" target="_blank" class="demo-link">Live Demo →</a>
+                            <a href="https://github.com/aadipalsingh/KeyMetrics" target="_blank">GitHub →</a>
+                            <a href="https://aadipalsingh.github.io/KeyMetrics/" target="_blank" class="demo-link">Live Demo →</a>
                         </div>
                     </div>
                 </div>
+                
                 <div class="project-card">
                     <div class="project-image"><img src="./Assets/port.png" alt="Project 2"></div>
                     <div class="project-content">
@@ -252,20 +281,36 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="project-card">
-                    <div class="project-image"><img src="./Assets/keymetrics.png" alt="Project 3"></div>
+                    <div class="project-image"><img src="./Assets/ssms.png" alt="Smart Shop Management System"></div>
                     <div class="project-content">
-                        <h3>KeyMetrics - Typing Test</h3>
-                        <p>Built an interactive typing test web application that measures typing speed (WPM), accuracy, and provides real-time feedback. Features include multiple difficulty levels, performance analytics, and detailed statistics tracking.</p>
+                        <h3>Smart Shop Management System</h3>
+                        <p>Command-line Java application for shop management, applying core OOP principles such as classes, inheritance, and encapsulation to manage inventory tracking and billing logic. Strengthened understanding of Java application structure, data flow, and object-oriented design patterns.</p>
                         <div class="tech-stack">
-                            <span class="tech">HTML5</span>
-                            <span class="tech">CSS3</span>
-                            <span class="tech">JavaScript</span>
-                            <span class="tech">Web APIs</span>
+                            <span class="tech">Java</span>
+                            <span class="tech">OOP</span>
+                            <span class="tech">CLI</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/aadipalsingh/KeyMetrics" target="_blank">GitHub →</a>
-                            <a href="https://aadipalsingh.github.io/KeyMetrics/" target="_blank" class="demo-link">Live Demo →</a>
+                            <a href="https://github.com/aadipalsingh/Project-ITPR-Smart-Shop-Management-System" target="_blank">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"><img src="./Assets/todo.png" alt="Project 3"></div>
+                    <div class="project-content">
+                        <h3>To-Do List Application</h3>
+                        <p>Developed a Python-based To-Do List application using Tkinter, enhancing task management efficiency by implementing features such as add, edit, delete, and save with an intuitive graphical interface.</p>
+                        <div class="tech-stack">
+                            <span class="tech">Python</span>
+                            <span class="tech">Tkinter</span>
+                            <span class="tech">GUI Development</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aadipalsingh/CODSOFT/tree/master/To-Do%20App" target="_blank">GitHub →</a>
+                        
                         </div>
                     </div>
                 </div>
@@ -323,31 +368,66 @@
         </div>
     </section>
 
-    <!-- Achievements Section -->
-    <section id="achievements">
+    <!-- Certifications Section -->
+    <section id="certifications">
         <div class="container">
-            <h2 class="section-title">Achievements & Certifications</h2>
-            <p class="section-subtitle">Recognition and learning milestones</p>
+            <h2 class="section-title">Certifications</h2>
+            <p class="section-subtitle">Industry-recognized credentials from reputed organizations.</p>
             <div class="achievements-grid">
                 <div class="achievement-card">
                     <div class="achievement-icon">📜</div>
-                    <h3>Python Development</h3>
-                    <p>Python Developer<br>CodSoft<br>Completed: Jan 2025</p>
+                    <h3>Python Developer Internship</h3>
+                    <p>CodSoft - Jan 2025<br>C.ID: c94a05e</p>
                 </div>
                 <div class="achievement-card">
                     <div class="achievement-icon">🌐</div>
-                    <h3>Web Development</h3>
-                    <p>Web Developer<br>Oasis Infobyte<br>Completed: Jan 2025</p>
+                    <h3>Web Developer Internship</h3>
+                    <p>Oasis Infobyte - Jan 2025<br>C.ID: OIB/D1/IP162</p>
                 </div>
                 <div class="achievement-card">
-                    <div class="achievement-icon">💻</div>
-                    <h3>Projects Completed</h3>
-                    <p>4 Major Projects<br>Task Management & Web Dev<br>Dec 2024 - Jan 2025</p>
+                    <div class="achievement-icon">⭐</div>
+                    <h3>Certificate of Appreciation - Star Performer</h3>
+                    <p>Oasis Infobyte (AICTE-backed) - Jan 2025</p>
                 </div>
                 <div class="achievement-card">
-                    <div class="achievement-icon">🍳</div>
-                    <h3>Skills Acquired</h3>
-                    <p>Python • Tkinter<br>Responsive Design<br>Cross-platform Development</p>
+                    <div class="achievement-icon">🎓</div>
+                    <h3>NPTEL - Python Programming</h3>
+                    <p>IIT via SWAYAM - 2024</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🤖</div>
+                    <h3>Generative AI Productivity Skills</h3>
+                    <p>LinkedIn Learning & Microsoft - 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <p class="section-subtitle">Milestones beyond the classroom.</p>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">⭐</div>
+                    <h3>Star Performer</h3>
+                    <p>Recognized by AICTE-backed Oasis Infobyte for exceptional dedication during Web Development internship, Jan 2025.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🥇</div>
+                    <h3>Gold Medal</h3>
+                    <p>Drawing Competition by Bajaj - District Level (8th Standard).</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🥉</div>
+                    <h3>Bronze Medal</h3>
+                    <p>Natural Disaster Report & Project - State Level (9th Standard).</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🤖</div>
+                    <h3>GenAI Certified</h3>
+                    <p>LinkedIn & Microsoft Generative AI certification - applying AI tools in academic and project work.</p>
                 </div>
             </div>
         </div>
@@ -422,7 +502,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Aditya Pal. All rights reserved.</p>
+        <p>&copy; 2026 Aditya Pal. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

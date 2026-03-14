@@ -79,32 +79,108 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
-// Navbar background on scroll
-window.addEventListener('scroll', () => {
+// Navbar style update on scroll
+function updateNavbarState() {
     const nav = document.querySelector('nav');
-    if (window.scrollY > 50) {
-        nav.style.background = 'rgba(var(--bg-light-rgb), 0.95)';
-        nav.style.backdropFilter = 'blur(10px)';
-    } else {
-        nav.style.background = 'var(--bg-light)';
+    if (!nav) {
+        return;
     }
-});
 
-// Typing animation for tagline
-const tagline = document.querySelector('.tagline');
-const text = tagline.textContent;
-tagline.textContent = '';
-let index = 0;
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+}
 
-function typeWriter() {
-    if (index < text.length) {
-        tagline.textContent += text.charAt(index);
-        index++;
-        setTimeout(typeWriter, 50);
+window.addEventListener('scroll', updateNavbarState);
+
+// Typing animation for rotating hero subtitle lines
+const heroSubtitleLines = [
+    'Python & Web Developer',
+    'B.Tech CSE Student @ AKTU',
+    'Java & DSA Enthusiast',
+    'Open to Internships 🚀'
+];
+
+function initHeroSubtitleTyping() {
+    const subtitle = document.querySelector('.subtitle');
+    if (!subtitle || heroSubtitleLines.length === 0) {
+        return;
     }
+
+    let lineIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    const typingSpeed = 70;
+    const deletingSpeed = 40;
+    const holdAfterTyping = 1400;
+    const holdAfterDeleting = 300;
+
+    function tick() {
+        const currentLine = heroSubtitleLines[lineIndex];
+        subtitle.textContent = currentLine.slice(0, charIndex);
+
+        if (!isDeleting && charIndex < currentLine.length) {
+            charIndex++;
+            setTimeout(tick, typingSpeed);
+            return;
+        }
+
+        if (isDeleting && charIndex > 0) {
+            charIndex--;
+            setTimeout(tick, deletingSpeed);
+            return;
+        }
+
+        if (!isDeleting) {
+            isDeleting = true;
+            setTimeout(tick, holdAfterTyping);
+            return;
+        }
+
+        isDeleting = false;
+        lineIndex = (lineIndex + 1) % heroSubtitleLines.length;
+        setTimeout(tick, holdAfterDeleting);
+    }
+
+    tick();
+}
+
+function initInteractiveSurfaceGlow() {
+    const surfaces = document.querySelectorAll('nav, section');
+    if (surfaces.length === 0) {
+        return;
+    }
+
+    const supportsPointerTracking = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+    surfaces.forEach((surface) => {
+        surface.style.setProperty('--mouse-x', '50%');
+        surface.style.setProperty('--mouse-y', '50%');
+    });
+
+    if (!supportsPointerTracking) {
+        return;
+    }
+
+    surfaces.forEach((surface) => {
+        surface.addEventListener('mousemove', (event) => {
+            const rect = surface.getBoundingClientRect();
+            const x = ((event.clientX - rect.left) / rect.width) * 100;
+            const y = ((event.clientY - rect.top) / rect.height) * 100;
+
+            surface.style.setProperty('--mouse-x', `${x}%`);
+            surface.style.setProperty('--mouse-y', `${y}%`);
+        });
+
+        surface.addEventListener('mouseleave', () => {
+            surface.style.setProperty('--mouse-x', '50%');
+            surface.style.setProperty('--mouse-y', '50%');
+        });
+    });
 }
 
 // Start typing animation when page loads
 window.addEventListener('load', () => {
-    setTimeout(typeWriter, 1000);
+    updateNavbarState();
+    setTimeout(initHeroSubtitleTyping, 700);
+    initInteractiveSurfaceGlow();
 });
