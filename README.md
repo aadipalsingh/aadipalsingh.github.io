@@ -3,8 +3,7 @@
 This repository contains the source code for my personal portfolio website, hosted via **GitHub Pages**. It serves as a central hub to showcase my projects, skills, and certifications.
 
 ## 🚀 Live Site
-**Check it out here:** [https://adityapal.in/]([https://adityapal.in/])
-
+🌐 Live Website: [adityapal.in](https://adityapal.in/)
 ## ✨ Features
 - **About Me:** Professional background and bio.
 - **Project Showcase:** Links to my top GitHub repositories.
